@@ -1,0 +1,64 @@
+/* 现代轻量风格全局样式 */
+.gradio-container {
+  background: #f8fafc !important;
+  background-image:
+    radial-gradient(at 20% 10%, rgba(99, 102, 241, .06) 0%, transparent 50%),
+    radial-gradient(at 80% 80%, rgba(14, 165, 233, .06) 0%, transparent 50%) !important;
+}
+
+#app-header { text-align: center; padding: 2rem 0 1.5rem; }
+#app-title {
+  font-size: 2rem; font-weight: 800; letter-spacing: -0.5px;
+  color: #0f172a; margin-bottom: .3rem;
+}
+#app-subtitle { color: #64748b; font-size: .95rem; font-weight: 400; }
+
+/* 快捷股票按钮 */
+.stock-btn button {
+  height: 44px !important; font-size: .9rem !important;
+  border-radius: 10px !important;
+  background: #ffffff !important;
+  border: 1px solid #e2e8f0 !important;
+  color: #334155 !important;
+  box-shadow: 0 1px 2px rgba(0,0,0,.04) !important;
+  transition: all .2s ease !important;
+}
+.stock-btn button:hover {
+  border-color: #6366f1 !important;
+  color: #4f46e5 !important;
+  box-shadow: 0 2px 8px rgba(99,102,241,.15) !important;
+}
+
+/* 主预测按钮 */
+#predict-btn button {
+  height: 44px !important; font-size: .95rem !important; font-weight: 600;
+  border-radius: 10px !important;
+  background: linear-gradient(135deg, #6366f1, #0ea5e9) !important;
+  color: #ffffff !important;
+  border: none !important;
+  box-shadow: 0 2px 12px rgba(99,102,241,.25) !important;
+  transition: all .2s ease !important;
+}
+#predict-btn button:hover {
+  box-shadow: 0 4px 20px rgba(99,102,241,.35) !important;
+  transform: translateY(-1px);
+}
+
+/* 摘要卡片 */
+.summary-card {
+  border-radius: 14px !important;
+  border: 1px solid #e2e8f0 !important;
+  background: #ffffff !important;
+  box-shadow: 0 1px 3px rgba(0,0,0,.05) !important;
+}
+
+/* 图表区域微调 */
+.gradio-image img {
+  border-radius: 12px !important;
+}
+
+/* 数据表格：紧凑显示 */
+.gradio-dataframe table { width: 100% !important; font-size: .82rem; }
+.gradio-dataframe table th,
+.gradio-dataframe table td { padding: 4px 8px !important; white-space: nowrap; }
+.gradio-dataframe .table-wrap { overflow-x: auto; }
