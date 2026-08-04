@@ -36,6 +36,9 @@ weights/
 # 工具生成
 .zread/
 
+# 本地文档（不入库，仅本地保留）
+docs/
+
 # 系统
 .DS_Store
 Thumbs.db
