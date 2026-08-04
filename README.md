@@ -20,6 +20,9 @@ uv run app.py
 - Kronos-base 模型，CPU 推理，预测未来 10-120 个交易日
 - 腾讯后复权行情，涨跌停限幅
 
+
+![Kronos A股预测面板示例](images/效果图.png)
+
 ## 模型下载
 
 首次运行自动从 HuggingFace 拉取 `NeoQuasar/Kronos-base` 与 `NeoQuasar/Kronos-Tokenizer-base`，已配置 hf-mirror 镜像。若需手动下载：
@@ -31,3 +34,5 @@ uv run python -c "from huggingface_hub import snapshot_download; print(snapshot_
 ```
 
 > 注意：需禁用 xet（`HF_HUB_DISABLE_XET=1`），否则 hf-mirror 会返回 401。
+
+
